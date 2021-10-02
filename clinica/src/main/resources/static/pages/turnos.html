@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>LISTAR Y BUSCAR PERSONAS</title>
+</head>
+<body>
+    <header>
+        <h2>EMPLEADOS</h2>
+        <nav>
+            <ul>
+                <li><a href="/index.html">REGISTRO</a></li>
+                <li><a href="http://localhost:8080/empleados/all">EMPLEADOS (JSON)</a></li>
+                <li><a href="./pages/listaPersonas.html">EMPLEADOS</a></li>
+            </ul>
+        </nav>
+        <h2>LOGIN</h2>
+
+    </header>
+
+    <section class="listado">
+        <h1>EMPLEADOS REGISTRADOS</h1>
+        <div id="todos">
+        <button id="botonListado">TODOS LOS EMPLEADOS</button>
+        <div class='getPersonaByID'>
+        <form>
+            <label>ENCONTRAR PERSONA POR ID:</label>
+            <input type="text" id="id-persona">
+        </form>
+        <button id="getByID">BUSCAR</button>
+        </div>
+        
+        </div>
+        </section>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <h2>ACTUALIZAR DATOS DEL EMPLEADO</h2>
+              <form>
+                <label>NUEVO CARGO:</label>
+                <input type="text" id="nuevoCargo">
+                <label>NUEVO SALARIO:</label>
+                <input type="number" id="nuevoSalario">
+              </form>
+              <button id="update">ACTUALIZAR</button>
+            </div>
+          
+          </div>
+    
+    <section class="listaPersonas">
+
+    </section>
+
+    <script src="/js/scriptListaPersonas.js"></script>
+    
+
+</body>
+</html>

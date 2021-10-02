@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>GESTOR DE PERSONAS</title>
+</head>
+<body>
+    <header>
+        <h2>CLINICA ODONTOLOGICA</h2>
+        <nav>
+            <ul>
+                <li><a href="/index.html">PACIENTES</a></li>
+                <li><a href="./pages/odontologos.html">ODONTOLOGOS</a></li>
+                <li><a href="./pages/turnos.html">TURNOS</a></li>
+            </ul>
+        </nav>
+        <h2>LOGIN</h2>
+
+    </header>
+
+
+    <div class="pacientes">
+    <section class="registroOdontologo">
+
+    <h1>REGISTRO ODONTOLOGO</h1>
+
+    <form class="registrarOdontologo">
+
+        <label>NOMBRES:</label>
+        <input type="text" id="nombre">
+        <label>APELLIDOS:</label>
+        <input type="text" id="apellido">
+        <label>MATRICULA:</label>
+        <input type="number" id="matricula">
+        
+    </form>
+
+    <button id="registro-odontologo">REGISTRAR ODONTOLOGO</button>
+    </section> 
+
+   
+    <table id="tabla-pacientes">
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>MATRICULA</th>
+          </tr>
+    </table>
+
+    </div>
+
+  
+
+    <form class="busquedaDocumento">
+
+        <label><h3>BUSCAR ODONTOLOGO POR MATRICULA:</h3></label>
+        <input type="number" id="buscarmatricula">
+        <button id="buscar-matricula">BUSCAR</button>
+    </form>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+
+    <div class="modal-content">
+        <h2>ACTUALIZAR DATOS PACIENTE</h2>
+    <form class="RegistroModal">
+
+        <label>NOMBRES:</label>
+        <input type="text" id="nombreModal">
+        <label>APELLIDOS:</label>
+        <input type="text" id="apellidoModal">
+        <label>MATRICULA:</label>
+        <input type="number" id="matriculaModal">
+       
+    </form>
+    <button id="updateOdontologoModal"> ACTUALIZAR</button>
+
+</div>
+
+
+
+    
+    <script src="../js/scriptOdontologos.js"></script>
+    
+    
+
+</body>
+</html>
